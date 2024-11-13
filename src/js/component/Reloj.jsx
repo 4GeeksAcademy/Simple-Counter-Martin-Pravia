@@ -4,7 +4,7 @@ const Reloj = () => {
   return (
     <div className="container">
       <div className="watch">
-        <i class="fa-regular fa-clock"></i>
+        <i className="fa-regular fa-clock"></i>
       </div>
       <div className="hour1">Hora1</div>
       <div className="hour2">Hora2</div>
