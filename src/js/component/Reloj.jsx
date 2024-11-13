@@ -12,24 +12,24 @@ const Reloj = () => {
     return () => clearInterval(tiempo);
   }, []);
 
-  const second1 = Math.floor(seconds % 10);
-  const second2 = Math.floor((seconds / 10) % 10);
-  const second3 = Math.floor((seconds / 100) % 10);
-  const second4 = Math.floor((seconds / 1000) % 10);
-  const second5 = Math.floor((seconds / 10000) % 10);
-  const second6 = Math.floor((seconds / 100000) % 10);
+  const segundo1 = Math.floor(segundos % 10);
+  const segundo2 = Math.floor((segundos / 10) % 10);
+  const segundo3 = Math.floor((segundos / 100) % 10);
+  const segundo4 = Math.floor((segundos / 1000) % 10);""
+  const segundo5 = Math.floor((segundos / 10000) % 10);
+  const segundo6 = Math.floor((segundos / 100000) % 10);
 
   return (
     <div className="container">
       <div className="watch">
         <i className="fa fa-clock"></i>
       </div>
-      <SegundosActuales numeroAColocar={second1} />
-      <SegundosActuales numeroAColocar={second2} />
-      <SegundosActuales numeroAColocar={second3} />
-      <SegundosActuales numeroAColocar={second4} />
-      <SegundosActuales numeroAColocar={second5} />
-      <SegundosActuales numeroAColocar={second6} />
+      <SegundosActuales numeroAColocar={segundo6} />
+      <SegundosActuales numeroAColocar={segundo5} />
+      <SegundosActuales numeroAColocar={segundo4} />
+      <SegundosActuales numeroAColocar={segundo3} />
+      <SegundosActuales numeroAColocar={segundo2} />
+      <SegundosActuales numeroAColocar={segundo1} />
    
     </div>
   );
