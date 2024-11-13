@@ -1,17 +1,30 @@
-import React from "react";
+import {useState, useEffect} from "react";
+import React from 'react';
 
 const Reloj = () => {
+const [segundos, setSegundos] = useState(0);
+
+useEffect(() =>{
+  const tiempo = setTiempo(() => {
+    setSegundos((segundosAnteriores) => segundosAnteriores +1);
+  }, 1000);
+  
+}
+)
+ 
+}
+
   return (
     <div className="container">
       <div className="watch">
-        <i className="fa-regular fa-clock"></i>
+        <i className="fa fa-clock"></i>
       </div>
-      <div className="hour1">Hora1</div>
-      <div className="hour2">Hora2</div>
-      <div className="minute1">Minuto1</div>
-      <div className="minute2">Minuto2</div>
-      <div className="second1">Segundo1</div>
-      <div className="second">Segundo2</div>
+      <div className="s6">S6</div>
+      <div className="s5">S5</div>
+      <div className="s4">S4</div>
+      <div className="s3">S3</div>
+      <div className="s2">S2</div>
+      <div className="s1">S1</div>
     </div>
   );
 };
